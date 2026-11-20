@@ -1,0 +1,25 @@
+{
+  "name": "dorchax",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "infra:up": "docker compose up -d",
+    "infra:down": "docker compose down",
+    "db:push": "npm --workspace=@dorchax/shared run db:push",
+    "verify:m1": "npm --workspace=@dorchax/shared run verify"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "allowScripts": {
+    "esbuild@0.18.20": true,
+    "esbuild@0.25.12": true,
+    "esbuild@0.28.2": true
+  }
+}

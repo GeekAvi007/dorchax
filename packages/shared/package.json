@@ -1,0 +1,23 @@
+{
+  "name": "@dorchax/shared",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:push": "drizzle-kit push --config=drizzle.config.js",
+    "verify": "node --env-file=../../.env src/verify.js"
+  },
+  "keywords": [],
+  "type": "module",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1173.0",
+    "bullmq": "^6.7.8",
+    "drizzle-orm": "^0.45.4",
+    "ioredis": "^6.0.0",
+    "postgres": "^4.1.1"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.11"
+  }
+}
